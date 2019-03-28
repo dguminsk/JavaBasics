@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+п»їpackage by.epam.javabasics.homework02;
 import java.util.Scanner;
 
 public class Task05 {
@@ -24,7 +24,7 @@ public class Task05 {
 		
 		double answer = (a + b) / 2;
 		
-		System.out.print("Среднее арифметическое чисел " + a + " и " + b + ": " + answer);
+		System.out.print("РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ С‡РёСЃРµР» " + a + " Рё " + b + ": " + answer);
 		
 		
 	}

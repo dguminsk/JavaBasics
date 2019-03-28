@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+п»їpackage by.epam.javabasics.homework02;
 import java.util.Scanner;
 
 public class Task07 {
@@ -10,7 +10,7 @@ public class Task07 {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Введите длину прямоугольника > ");
+		System.out.print("Р’РІРµРґРёС‚Рµ РґР»РёРЅСѓ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° > ");
 		while(input.hasNextDouble() == false) {
 			input.next();
 			System.out.print("Please enter double value > ");
@@ -19,7 +19,7 @@ public class Task07 {
 		
 		ploshad = dlinna * dlinna / 2;
 		
-		System.out.print("Площадь прямоугольника: " + ploshad);
+		System.out.print("РџР»РѕС‰Р°РґСЊ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР°: " + ploshad);
 		
 	}
 

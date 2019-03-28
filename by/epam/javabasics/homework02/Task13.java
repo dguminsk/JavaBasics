@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+ï»¿package by.epam.javabasics.homework02;
 
 import java.util.Scanner;
 
@@ -61,7 +61,7 @@ public class Task13 {
 		double polperim = perimetr / 2;
 		double ploshad = Math.sqrt(polperim * (polperim - storona1) * (polperim - storona2) * (polperim - storona3));
 		
-		System.out.print("Ïëîùàäü: " + ploshad + " Ïåğèìåòğ: " + perimetr);		
+		System.out.print("ĞŸĞ»Ğ¾Ñ‰Ğ°Ğ´ÑŒ: " + ploshad + " ĞŸĞµÑ€Ğ¸Ğ¼ĞµÑ‚Ñ€: " + perimetr);		
 	}
 
 }

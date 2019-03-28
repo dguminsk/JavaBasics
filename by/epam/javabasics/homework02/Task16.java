@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+п»їpackage by.epam.javabasics.homework02;
 import java.util.Scanner;
 
 public class Task16 {
@@ -8,7 +8,7 @@ public class Task16 {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Введите 4х значное число > ");
+		System.out.print("Р’РІРµРґРёС‚Рµ 4С… Р·РЅР°С‡РЅРѕРµ С‡РёСЃР»Рѕ > ");
 		while(input.hasNextInt() == false) {
 			input.next();
 			System.out.print("Please enter int value > ");
@@ -21,9 +21,9 @@ public class Task16 {
 			int fourth = chislo % 10;
 			
 			int answer = first * second * third * fourth;
-			System.out.print("Произведение цифр = " + answer);
+			System.out.print("РџСЂРѕРёР·РІРµРґРµРЅРёРµ С†РёС„СЂ = " + answer);
 		} else {
-			System.out.print("Вы ввели не четырехзначное число");
+			System.out.print("Р’С‹ РІРІРµР»Рё РЅРµ С‡РµС‚С‹СЂРµС…Р·РЅР°С‡РЅРѕРµ С‡РёСЃР»Рѕ");
 		}
 		
 	}

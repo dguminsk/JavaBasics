@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+п»їpackage by.epam.javabasics.homework02;
 import java.util.Scanner;
 
 public class Task11 {
@@ -10,14 +10,14 @@ public class Task11 {
 		
 		double a, b, c;
 		
-		System.out.print("Введите первый катет > ");
+		System.out.print("В¬РІРµРґРёС‚Рµ РїРµСЂРІС‹Р№ РєР°С‚РµС‚ > ");
 		while(input.hasNextDouble() == false) {
 			input.next();
 			System.out.print("Please enter double value> ");
 		}
 		a = input.nextDouble();
 		
-		System.out.print("Введите второй катет > ");
+		System.out.print("В¬РІРµРґРёС‚Рµ РІС‚РѕСЂРѕР№ РєР°С‚РµС‚ > ");
 		while(input.hasNextDouble() == false) {
 			input.next();
 			System.out.print("Please enter double value> ");
@@ -29,8 +29,8 @@ public class Task11 {
 		double perimetr = a + b + c;
 		double ploshad = a * b / 2;
 		
-		System.out.println("Периметр: " + perimetr);
-		System.out.println("Площадь: " + ploshad);
+		System.out.println("С•РµСЂРёРјРµС‚СЂ: " + perimetr);
+		System.out.println("С•Р»РѕС‰Р°РґСЊ: " + ploshad);
 		
 	}
 	 

@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+﻿package by.epam.javabasics.homework02;
 import java.util.Scanner;
 
 public class Task06 {

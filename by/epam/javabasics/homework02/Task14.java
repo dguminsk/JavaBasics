@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+п»їpackage by.epam.javabasics.homework02;
 
 import java.util.Scanner;
 
@@ -21,7 +21,7 @@ public class Task14 {
 		double dlina = Math.PI * R * 2;
 		double ploshad = Math.PI * R * R;
 		
-		System.out.print("Площадь круга: " + ploshad + " Длина окружности: " + dlina);		
+		System.out.print("С•Р»РѕС‰Р°РґСЊ РєСЂСѓРіР°: " + ploshad + " Ж’Р»РёРЅР° РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " + dlina);		
 	}
 
 }

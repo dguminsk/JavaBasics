@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+п»їpackage by.epam.javabasics.homework02;
 
 public class Task17 {
 
@@ -10,8 +10,8 @@ public class Task17 {
 		double arifmetic = (Math.pow(a, 3) + Math.pow(b, 3)) / 2;
 		double geometric = Math.sqrt(a * b);
 		
-		System.out.println("Среднее арефметическое кубов чисел " + a + " и " + b + " = " + arifmetic);
-		System.out.println("Среднее геометрическое чисел " + a + " и " + b + " = " + geometric);
+		System.out.println("РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ РєСѓР±РѕРІ С‡РёСЃРµР» " + a + " Рё " + b + " = " + arifmetic);
+		System.out.println("РЎСЂРµРґРЅРµРµ РіРµРѕРјРµС‚СЂРёС‡РµСЃРєРѕРµ С‡РёСЃРµР» " + a + " Рё " + b + " = " + geometric);
 		
 
 	}

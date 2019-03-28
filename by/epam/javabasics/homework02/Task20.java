@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+ï»¿package by.epam.javabasics.homework02;
 
 public class Task20 {
 	
@@ -10,7 +10,7 @@ public class Task20 {
 		
 		double ploshad = radius * radius * Math.PI;
 		
-		System.out.print("Ïëîùàäü êğóãà: " + ploshad);
+		System.out.print("ĞŸĞ»Ğ¾Ñ‰Ğ°Ğ´ÑŒ ĞºÑ€ÑƒĞ³Ğ°: " + ploshad);
 
 	}
 

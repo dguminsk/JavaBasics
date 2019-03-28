@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+п»їpackage by.epam.javabasics.homework02;
 
 public class Task19 {
 
@@ -11,10 +11,10 @@ public class Task19 {
 		double r_vpisannoj = Math.sqrt(3) / 6 * storona;
 		double r_opisannoj = Math.sqrt(3) / 3 * storona;
 		
-		System.out.println("Площадь: " + ploshad);
-		System.out.println("Высота: " + vysota);
-		System.out.println("Радиус вписанной окружности: " + r_vpisannoj);
-		System.out.println("Радиус описанной окружности: " + r_opisannoj);
+		System.out.println("РџР»РѕС‰Р°РґСЊ: " + ploshad);
+		System.out.println("Р’С‹СЃРѕС‚Р°: " + vysota);
+		System.out.println("Р Р°РґРёСѓСЃ РІРїРёСЃР°РЅРЅРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " + r_vpisannoj);
+		System.out.println("Р Р°РґРёСѓСЃ РѕРїРёСЃР°РЅРЅРѕР№ РѕРєСЂСѓР¶РЅРѕСЃС‚Рё: " + r_opisannoj);
 
 	}
 

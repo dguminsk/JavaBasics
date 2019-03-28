@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+п»їpackage by.epam.javabasics.homework02;
 
 import java.util.Scanner;
 
@@ -41,7 +41,7 @@ public class Task12 {
 		
 		double answer = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
 		
-		System.out.print("Расстояние между точками: " + answer);
+		System.out.print("Р Р°СЃСЃС‚РѕСЏРЅРёРµ РјРµР¶РґСѓ С‚РѕС‡РєР°РјРё: " + answer);
 				
 	}
 
