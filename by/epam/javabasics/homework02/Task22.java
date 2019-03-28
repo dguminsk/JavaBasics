@@ -1,4 +1,4 @@
-package by.epam.javabasics.homework02;
+ï»¿package by.epam.javabasics.homework02;
 
 public class Task22 {
 
@@ -10,7 +10,7 @@ public class Task22 {
 		int m = (time % 3600) / 60;
 		int s = (time % 3600) % 60;
 		
-		System.out.print(h + "÷ " + m + "ì " + s + "ñ");
+		System.out.print(h + "Ñ‡ " + m + "Ğ¼ " + s + "Ñ");
 		
 
 	}
