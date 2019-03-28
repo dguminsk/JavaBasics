@@ -3,7 +3,15 @@ package by.epam.javabasics.homework02;
 public class Task22 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		int time = 1234566780;
+		
+		int h = (time / 3600) % 24;
+		int m = (time % 3600) / 60;
+		int s = (time % 3600) % 60;
+		
+		System.out.print(h + "÷ " + m + "ì " + s + "ñ");
+		
 
 	}
 
