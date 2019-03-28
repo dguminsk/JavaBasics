@@ -12,14 +12,14 @@ public class Task06 {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Малых бидонов > ");
+		System.out.print("РњР°Р»С‹С… Р±РёРґРѕРЅРѕРІ > ");
 		while(input.hasNextInt() == false) {
 			input.next();
 			System.out.print("Please enter int value > ");
 		}
 		mBidon = input.nextInt();
 		
-		System.out.print("Больших бидонов > ");
+		System.out.print("Р‘РѕР»СЊС€РёС… Р±РёРґРѕРЅРѕРІ > ");
 		while(input.hasNextInt() == false) {
 			input.next();
 			System.out.print("Please enter int value > ");
@@ -27,11 +27,11 @@ public class Task06 {
 		bBidon = input.nextInt();
 		
 		if(mBidon == 0) {
-			System.out.print("Задача не имеет решения");
+			System.out.print("Р—Р°РґР°С‡Р° РЅРµ РёРјРµРµС‚ СЂРµС€РµРЅРёСЏ");
 		} else {
 			double objemmBidon = 80 / mBidon;
 			double objembBidon = objemmBidon + 12;
-			System.out.print("Объем в больших бидонах: " + objembBidon * bBidon);
+			System.out.print("РћР±СЉРµРј РІ Р±РѕР»СЊС€РёС… Р±РёРґРѕРЅР°С…: " + objembBidon * bBidon);
 		}	
 		
 	}
