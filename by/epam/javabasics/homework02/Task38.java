@@ -5,16 +5,22 @@ public class Task38 {
 	public static void main(String[] args) {
 		
 		int x = 3;
-		int y = -3;
+		int y = 1;
 		
-		System.out.println(Task38.isInFigure1(x, y));
-		System.out.println(Task38.isInFigure2(x, y));
-		System.out.println(Task38.isInFigure3(x, y));
+		System.out.println("Is in figure 1: " + Task38.isInFigure1(x, y));
+		System.out.println("Is in figure 2: " + Task38.isInFigure2(x, y));
+		System.out.println("Is in figure 3: " + Task38.isInFigure3(x, y));
 
 	}
 	
 	private static boolean isInFigure1(int x, int y) {
-		if(x == 1) {
+		
+		
+		if(Math.abs(x) > 4 || y < 0 || y > 4) {
+			return false;
+		}
+		
+		if((Math.abs(x) + y) <= 4) {
 			return true;
 		} else {
 			return false;
@@ -23,7 +29,9 @@ public class Task38 {
 	
 	private static boolean isInFigure2(int x, int y) {
 		
-		if(-4 <= x && x <= 4 && -3 <= y && y <= 4) {
+		if(x >= -4 && x <= 4 && y <= 0 && y >= -3) {
+			return true;
+		} else if(x >= -2 && x <= 2 && y >= 0 && y <= 4) {
 			return true;
 		} else {
 			return false;
@@ -36,9 +44,9 @@ public class Task38 {
 			return false;
 		}
 		
-		if(y > 0 && x + y <= 4) {
+		if(y > 0 && Math.sqrt(x * x + y * y) <= 4) {
 			return true;
-		} else if (x + Math.abs(y) <= 5) {
+		} else if (y <= 0 && Math.sqrt(x * x + y * y) <= 5) {
 			return true;
 		} else {
 			return false;
