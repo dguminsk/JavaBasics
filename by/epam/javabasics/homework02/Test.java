@@ -4,35 +4,56 @@ import java.util.Scanner;
 public class Test {
 
 	public static void main(String[] args) {
-		int var, first, second, third;
-		double x, y, m, n;
+		int var, first, second, third, temp, counter;
+		double x, y, m, n, a, b, c;
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
-		//TODO: Точка с координатами (х, у) принадлежит части плоскости, лежащей между прямыми х= m, y= n (m<n). 
-		System.out.println("Точка с координатами (х, у) принадлежит части плоскости, лежащей между прямыми х= m, y= n (m<n). Введите x > ");
-		System.out.println("Введите x > ");
-		if(input.hasNextDouble()) {
-			x = input.nextDouble();
-		}
-		
-		System.out.println("Введите y > ");
-		if(input.hasNextDouble()) {
-			y = input.nextDouble();
-		}
-		
-		System.out.println("Введите m > ");
-		if(input.hasNextDouble()) {
-			m = input.nextDouble();
-		}
-		
-		System.out.println("Введите n > ");
-		if(input.hasNextDouble()) {
-			n = input.nextDouble();
-		}
+		//TODO: График функции у = ах2 + bх+ с проходит через заданную точку с координатами (m, n). 
 
+		System.out.println("График функции у = ах2 + bх+ с проходит через заданную точку с координатами (m, n)");
+		System.out.print("Введите a > ");
+		while(input.hasNextDouble() == false) {
+			System.out.println("Enter double value > ");
+			input.next();
+		} 
+		a = input.nextDouble();
 		
-
+		System.out.print("Введите b > ");
+		while(input.hasNextDouble() == false) {
+			System.out.println("Enter double value > ");
+			input.next();
+		} 
+		b = input.nextDouble();
+		
+		System.out.print("Введите c > ");
+		while(input.hasNextDouble() == false) {
+			System.out.println("Enter double value > ");
+			input.next();
+		} 
+		c = input.nextDouble();
+		
+		System.out.print("Введите m > ");
+		while(input.hasNextDouble() == false) {
+			System.out.println("Enter double value > ");
+			input.next();
+		} 
+		m = input.nextDouble();
+		
+		System.out.print("Введите n > ");
+		while(input.hasNextDouble() == false) {
+			System.out.println("Enter double value > ");
+			input.next();
+		} 
+		n = input.nextDouble();
+		
+		if(n == a * n * n + b * n + c) {
+			System.out.print(true);
+		} else {
+			System.out.print(false);
+		}
+		
+		
 	}
 
 }
