@@ -36,7 +36,8 @@ public class Task01 {
 			
 		}
 		
-		System.out.println("Maximal value: " + maximal + " Minimal value: " + minimal);
+		System.out.println("Maximal value: " + maximal);
+		System.out.print("Minimal value: " + minimal);
 		
 	}
 
