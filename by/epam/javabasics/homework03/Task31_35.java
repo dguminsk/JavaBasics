@@ -89,52 +89,52 @@ public class Task31_35 {
 			month = 2;
 		}
 		
-		if(nomer > 28) {
+		if(nomer > 28 && month == 2) {
 			nomer -= 28;
 			month = 3;
 		}
 		
-		if(nomer > 31) {
+		if(nomer > 31 && month == 3) {
 			nomer -= 31;
 			month = 4;
 		}
 		
-		if(nomer > 30) {
+		if(nomer > 30 && month == 4) {
 			nomer -= 30;
 			month = 5;
 		}
 		
-		if(nomer > 31) {
+		if(nomer > 31 && month == 5) {
 			nomer -= 31;
 			month = 6;
 		}
 		
-		if(nomer > 30) {
+		if(nomer > 30 && month == 6) {
 			nomer -= 30;
 			month = 7;
 		}
 		
-		if(nomer > 31) {
+		if(nomer > 31 && month == 7) {
 			nomer -= 31;
 			month = 8;
 		}
 		
-		if(nomer > 31) {
+		if(nomer > 31 && month == 8) {
 			nomer -= 31;
 			month = 9;
 		}
 		
-		if(nomer > 30) {
+		if(nomer > 30 && month == 9) {
 			nomer -= 30;
 			month = 10;
 		}
 		
-		if(nomer > 31) {
+		if(nomer > 31 && month == 10) {
 			nomer -= 31;
 			month = 11;
 		}
 		
-		if(nomer > 30) {
+		if(nomer > 30 && month == 11) {
 			nomer -= 30;
 			month = 12;
 			System.out.println("Число: " + nomer + " Месяц: " + month);
