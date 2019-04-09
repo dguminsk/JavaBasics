@@ -78,7 +78,7 @@ public class Task01_10_part2 {
 			a += h;
 		}
 		
-		// TODO: don't understand 
+		// TODO: не совсем понял условие
 		a = 1;
 		b = 7;
 		h = 2;
@@ -105,6 +105,7 @@ public class Task01_10_part2 {
 			counter *= i * i;
 		}
 		System.out.println("Answer is " + counter);
+		
 		
 	}
 
