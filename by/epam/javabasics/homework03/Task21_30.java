@@ -10,9 +10,9 @@ public class Task21_30 {
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		
-		System.out.println("Кто ты: мальчик или девочка? Введи Д или М > ");
+		System.out.print("Кто ты: мальчик или девочка? Введи Д или М > ");
 		while(input.hasNext("М|Д") != true) {
-			System.out.println("Введи Д или М");
+			System.out.print("Введи Д или М");
 			input.next();
 		}
 		
@@ -36,16 +36,16 @@ public class Task21_30 {
 		
 		// 23. Определить правильность даты, введенной с клавиатуры (число — от 1 до 31, месяц — от 1 до 12). 
 		// Если введены некорректные данные, то сообщить об этом.
-		System.out.println("Введите число");
+		System.out.print("Введите число");
 		while(input.hasNext("[1-9]|[1-2][0-9]|[3][0-1]") != true) {
-			System.out.println("Число введено неверно. Введите число от 1 до 31 > ");
+			System.out.print("Число введено неверно. Введите число от 1 до 31 > ");
 			input.next();
 		}
 		String date = "День:" + input.next();
 		
-		System.out.println("Введите месяц");
+		System.out.print("Введите месяц");
 		while(input.hasNext("[1-9]|1[0-2]") != true) {
-			System.out.println("Число введено неверно. Введите месяц от 1 до 12 > ");
+			System.out.print("Число введено неверно. Введите месяц от 1 до 12 > ");
 			input.next();
 		}
 		date += " Месяц:" + input.next();
