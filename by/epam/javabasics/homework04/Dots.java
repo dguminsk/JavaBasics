@@ -7,15 +7,20 @@ public class Dots {
 	
 	public static void main(String[] args) {
 		
-		Scanner sc;
-		sc.
-		
+		int[] koordinatyX = new int[] {1,2,3,4};
+		int[] koordinatyY = new int[] {-1,-1,-2,3};
 
 	}
-
-	private static void print(int[] mas) {
-		// TODO Auto-generated method stub
+/*
+	private static int[] rasstojanie(int[] masX, int[] masY) {
 		
-	}
+		double[] temp1;
+		double[] temp2;
+		
+		for(int i=0; i < masX.length; i++) {
+			
+		}
+		
+	}*/
 
 }
