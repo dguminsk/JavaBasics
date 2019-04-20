@@ -1,10 +1,21 @@
 package by.epam.javabasics.homework04;
 
+import java.util.Scanner;
+
 public class Dots {
 
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Scanner sc;
+		sc.
+		
 
+	}
+
+	private static void print(int[] mas) {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -4,11 +4,11 @@ public class Decomposition {
 
 	public static void main(String[] args) {
 		
-		System.out.println(Decomposition.gcd(18, 30));
-		System.out.println(Decomposition.lcm(18, 30));
-		System.out.println(Decomposition.gcdOfFour(18, 36, 54, 27));
-		System.out.println(Decomposition.lcmOfThree(18, 36, 4));
-		System.out.println(Decomposition.sumOfHighAndSmall(18, 36, 4));
+		System.out.println(gcd(18, 30));
+		System.out.println(lcm(18, 30));
+		System.out.println(gcdOfFour(18, 36, 54, 27));
+		System.out.println(lcmOfThree(18, 36, 4));
+		System.out.println(sumOfHighAndSmall(18, 36, 4));
 		
 	}
 	

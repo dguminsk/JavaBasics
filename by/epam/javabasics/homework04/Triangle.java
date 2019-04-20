@@ -4,11 +4,11 @@ public class Triangle {
 
 	public static void main(String[] args) {
 
-		System.out.println("Площадь треугольника: " + Triangle.sTriangleByKoordinats(1, 1, 2, 2, 3, 5));
+		System.out.println("Площадь треугольника: " + sTriangleByKoordinats(1, 1, 2, 2, 3, 5));
 		
 		System.out.print("Площадь шестиугольника: ");
 		// Находим площадь треугольника со сторонами А и умножаем на 6
-		System.out.println(Triangle.sTriangleBySides(3, 3, 3) * 6);
+		System.out.println(sTriangleBySides(3, 3, 3) * 6);
 
 	}
 	
