@@ -13,7 +13,7 @@ public class Task02 {
 		String line;
 		String formatedSum;
 		int sum, value;
-		
+	
 		//The first line of table
 		System.out.println("------------");
 		

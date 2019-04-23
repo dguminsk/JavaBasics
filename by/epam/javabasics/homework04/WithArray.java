@@ -43,6 +43,17 @@ public class WithArray {
 	 
 	 } 
 	 
+	 public static void printArrayDouble(double[] mas) {   
+		 System.out.println("--------------------------------------------"); 
+	 
+	  for (int i = 0; i < mas.length; i++) {    
+		  System.out.print("mas[" + i + "]=" + mas[i] + "; ");   
+		  }   
+	  System.out.println();   
+	  System.out.println("--------------------------------------------"); 
+	 
+	 } 
+	 
 	 public static void findMaxElementAndIndex(int[] mas) {   
 		 if (mas.length == 0) {    
 			 return;   
@@ -63,7 +74,9 @@ public class WithArray {
 	 
 	  } 
 	 
-	  System.out.println("Максимальный элемент " + max + " расположен на позиции " + index + ".");  } 
+	  System.out.println("Максимальный элемент " + max + " расположен на позиции " + index + ".");  
+	  
+	 } 
 	 
 	 public static void sortArray(int[] mas) {   
 		 int minValueIndex = 0; 

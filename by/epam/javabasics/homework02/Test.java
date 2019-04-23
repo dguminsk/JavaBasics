@@ -7,7 +7,12 @@ public class Test {
 
 	public static void main(String[] args) {
 
-		int[] array = {1};
+		int[] a = new int[4];
+		int[] b = a;
+		int[] c = {1,2,3};
+		a[0] = 1;
+		System.out.print(b[0]);
+		
 
 	}
 
