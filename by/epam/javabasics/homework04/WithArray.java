@@ -32,6 +32,23 @@ public class WithArray {
 			 }  
 		 } 
 	 
+	 public static void printArrayOfArray(int[][] mas, boolean info) {
+		 System.out.println("--------------------------------------------"); 
+		 
+		  for (int i = 0; i < mas.length; i++) {  
+			  for(int z = 0; z < mas[i].length; z++) {
+				  if(info) {
+					  System.out.print("mas[" + i + "][" + z + "]=" + mas[i][z] + "; ");   
+				  } else {
+					  System.out.print(mas[i][z] + " "); 
+				  }
+			  }
+			  System.out.println();			
+			  }   
+		  System.out.println();   
+		  System.out.println("--------------------------------------------");
+	 }
+	 
 	 public static void printArray(int[] mas) {   
 		 System.out.println("--------------------------------------------"); 
 	 
