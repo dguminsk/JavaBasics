@@ -33,6 +33,7 @@ public class WithArray {
 		 } 
 	 
 	 public static void printArrayOfArray(int[][] mas, boolean info) {
+		
 		 System.out.println("--------------------------------------------"); 
 		 
 		  for (int i = 0; i < mas.length; i++) {  
