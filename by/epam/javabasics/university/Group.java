@@ -59,6 +59,8 @@ public class Group {
 			mark += student.getAverageMark();
 		}
 		
+		mark = mark / group.size();
+		
 		return mark;
 
 	}
