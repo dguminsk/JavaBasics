@@ -2,12 +2,12 @@ package by.epam.javabasics.unit13ht.task2;
 
 public class Payment {
 	
-	int id;
-	boolean isPaid = false;
-	int totalCost = 0;
-	int totalPaid = 0;
-	Product items[] = new Product[5];
-	int itemsAmount = 0;
+	private int id;
+	private boolean isPaid = false;
+	private int totalCost = 0;
+	private int totalPaid = 0;
+	private Product items[] = new Product[5];
+	private int itemsAmount = 0;
 	
 	public Payment(int id) {
 		this.id = id;

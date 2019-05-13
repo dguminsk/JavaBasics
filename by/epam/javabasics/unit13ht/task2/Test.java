@@ -13,12 +13,13 @@ public class Test {
 		Product product4 = new Product(4, "Компьютер", 386);
 		
 		payment.addToPayment(product1);
+		payment.addToPayment(product1);
 		payment.addToPayment(product2);
 		payment.addToPayment(product3);
 		payment.addToPayment(product4);
 		
 		payment.makePayment(450);
-		payment.makePayment(4001);
+		payment.makePayment(5000);
 		
 	}
 
