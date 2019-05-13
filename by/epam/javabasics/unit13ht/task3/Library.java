@@ -9,15 +9,19 @@ import java.util.Scanner;
 public class Library {
 	
 	private List<Book> library = new ArrayList<Book>();
-	private String filePath = "data.txt";
+	private String filePath;
 	
 	
 	public void add(Book book) {
 		library.add(book);
 	}
 	
+	public Library() {
+		
+	}
 	
-	public Library() throws FileNotFoundException {
+	public Library(String path) throws FileNotFoundException {
+		filePath = path;
 		Scanner dataFile = new Scanner(new File(filePath));
 		String line;
 		while(dataFile.hasNextLine()) {

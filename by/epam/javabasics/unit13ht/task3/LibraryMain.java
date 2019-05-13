@@ -7,8 +7,9 @@ public class LibraryMain {
 
 	public static void main(String[] args) throws FileNotFoundException{
 		
-		Library lib = new Library();
+		Library lib = new Library("data.txt");
 		LibraryLogic libLogic = new LibraryLogic();
+		Library searchResult;
 		
 		System.out.println("Добро пожаловать в библиотеку!");
 		System.out.println("Введите команду (справка: help или ?) > ");
@@ -38,7 +39,19 @@ public class LibraryMain {
 				
 			} else if (command.equals("find")) {
 				
-				System.out.println("find");
+				searchResult = libLogic.search(lib, input);
+				if(searchResult != null) {
+					System.out.println("Желаете отсортировать результаты поиска?");
+					System.out.print("Y или N > ");
+					while(input.hasNext("Y|N") != true) {
+						System.out.print("Y или N > ");
+						input.next();
+					}
+					if(input.next().equals("Y")) {
+						libLogic.sort(searchResult, input);
+					}
+				}
+				
 				
 			} else if (command.equals("delete")) {
 				

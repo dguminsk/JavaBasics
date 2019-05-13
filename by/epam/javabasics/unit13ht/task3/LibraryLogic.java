@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class LibraryLogic {
 	
-	
+
 	public void addBook(Library obj, Scanner input) {
 		System.out.println("Добавление новой книги в коллекцию:");
 		System.out.println("Введите название книги >");
@@ -38,6 +38,11 @@ public class LibraryLogic {
 	}
 	
 	public void printAllBooks(Library obj) {
+		if(obj.getLibrary().size() == 0) {
+			System.out.println("Коллекция пуста");
+			return;
+		}
+		
 		for(int i = 0; i < obj.getLibrary().size(); i++) {
 			System.out.println("------------");
 			System.out.println("Порядковый номер: " + (i + 1));
@@ -64,20 +69,89 @@ public class LibraryLogic {
 		}
 	}
 	
-	public void searchByAuthor() {
+	
+	public Library search(Library obj, Scanner input) {
+		
+		System.out.println("Выполнить поиск по 1.названию 2.автору");
+		System.out.print("Введите 1 или 2 > ");
+		while(input.hasNext("1|2") != true) {
+			System.out.print("Введите 1 или 2 > ");
+			input.next();
+		}
+		
+		Library searchResult = new Library();
+		
+		if(input.nextInt() == 1) {
+			System.out.print("Поиск по названию. Введите название книги > ");
+			String searchString = input.next();
+			System.out.println(searchString);
+			for(int i = 0; i < obj.getLibrary().size(); i++) {
+				if(obj.getLibrary().get(i).name.equals(searchString)) {
+					searchResult.add(obj.getLibrary().get(i));
+				}
+			}
+		} else {
+			System.out.print("Поиск по автору. Введите имя автора > ");
+			String searchString = input.next();
+			
+			for(int i = 0; i < obj.getLibrary().size(); i++) {
+				if(obj.getLibrary().get(i).author.equals(searchString)) {
+					searchResult.add(obj.getLibrary().get(i));
+				}
+			}
+		}
+		
+		if(searchResult.getLibrary().size() == 0) {
+			System.out.println("Ничего не найдено");
+			return null;
+		}
+		
+		System.out.println("Результаты поиска:");
+		printAllBooks(searchResult);
+		return searchResult;
+		
 		
 	}
 	
-	public void searchByName() {
+	public void sort(Library obj, Scanner input) {
+		System.out.println("Выполнить сортировку по 1.цене 2.дате выхода");
+		System.out.print("Введите 1 или 2 > ");
+		while(input.hasNext("1|2") != true) {
+			System.out.print("Введите 1 или 2 > ");
+			input.next();
+		}
+		
+		if(input.nextInt() == 1) {
+			System.out.print("Результат поиска с сортировкой по цене:");
+			sortCost(obj);
+		} else {
+			System.out.print("Результат поиска с сортировкой по дате выхода:");
+			sortDate(obj);
+		}
+
+	}
+	
+	public void sortDate(Library obj) {
 		
 	}
 	
-	public void sortDate() {
-		
-	}
-	
-	public void sortCost() {
-		
+	public void sortCost(Library obj) {
+		Book tempBook;
+
+		boolean isSorted = false;
+		while(!isSorted) {
+			for(int i = 1; i < obj.getLibrary().size(); i++) {
+				isSorted = true;
+				if(obj.getLibrary().get(i).cost < obj.getLibrary().get(i - 1).cost) {
+					isSorted = false;
+					tempBook = obj.getLibrary().get(i - 1);
+					obj.getLibrary().set(i - 1, obj.getLibrary().get(i));
+					obj.getLibrary().set(i, tempBook);
+					break;
+				}
+			}
+		}
+		printAllBooks(obj);
 	}
 
 }
