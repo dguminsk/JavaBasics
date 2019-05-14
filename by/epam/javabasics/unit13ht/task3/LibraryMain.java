@@ -15,6 +15,8 @@ public class LibraryMain {
 		System.out.println("Введите команду (справка: help или ?) > ");
 		
 		Scanner input = new Scanner(System.in);
+		//input.useDelimiter("");
+		
 		while(input.hasNext()) {
 			// help
 			String command = input.next();
@@ -41,6 +43,8 @@ public class LibraryMain {
 				
 				searchResult = libLogic.search(lib, input);
 				if(searchResult != null) {
+					
+					System.out.println("");
 					System.out.println("Желаете отсортировать результаты поиска?");
 					System.out.print("Y или N > ");
 					while(input.hasNext("Y|N") != true) {
@@ -59,7 +63,7 @@ public class LibraryMain {
 				
 			} else if (command.equals("sort")) {
 				
-				System.out.println("sort");
+				libLogic.sort(lib, input);
 				
 			} else {
 				
