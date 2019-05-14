@@ -172,19 +172,19 @@ public class LibraryLogic {
 		
 		switch(input.nextInt()) {
 		
-			case 1: System.out.println("Результат поиска с сортировкой по возрастанию цены:");
+			case 1: System.out.println("Результат сортировки по возрастанию цены:");
 			sortCost(obj, true);
 			break;
 			
-			case 2: System.out.println("Результат поиска с сортировкой по убыванию цены:");
+			case 2: System.out.println("Результат сортировки по убыванию цены:");
 			sortCost(obj, false);
 			break;
 			
-			case 3: System.out.println("Результат поиска с сортировкой по дате выхода, начиная со старых:");
+			case 3: System.out.println("Результат сортировки по дате выхода, начиная со старых:");
 			sortDate(obj, true);
 			break;
 			
-			case 4: System.out.println("Результат поиска с сортировкой по дате выхода, начиная с новых:");
+			case 4: System.out.println("Результат сортировки по дате выхода, начиная с новых:");
 			sortDate(obj, false);
 			break;
 			
@@ -192,7 +192,7 @@ public class LibraryLogic {
 
 	}
 	
-	public void sortCost(Library obj, boolean asc) {
+	private void sortCost(Library obj, boolean asc) {
 		
 		Book tempBook;
 
@@ -231,7 +231,7 @@ public class LibraryLogic {
 		printAllBooks(obj);
 	}
 	
-	public void sortDate(Library obj, boolean asc) {
+	private void sortDate(Library obj, boolean asc) {
 		Book tempBook;
 
 		boolean isSorted = false;
