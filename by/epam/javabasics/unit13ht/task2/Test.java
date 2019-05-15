@@ -19,7 +19,7 @@ public class Test {
 		payment.addToPayment(product4);
 		
 		payment.makePayment(450);
-		payment.makePayment(5000);
+		payment.makePayment(50);
 		
 	}
 

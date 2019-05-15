@@ -19,6 +19,13 @@ public class Customer {
 
 	}
 	
+	public Customer(int id, String lastName, String name, String surname) {
+		this.id = id;
+		setLastName(lastName);
+		setName(name);
+		setSurname(surname);
+	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -69,9 +76,6 @@ public class Customer {
 		return id;
 	}
 	
-	public void setId(int id) {
-		this.id = id;
-	}
 	
 	public String getName() {
 		return name;

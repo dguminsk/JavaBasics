@@ -5,7 +5,6 @@ public class Payment {
 	private int id;
 	private boolean isPaid = false;
 	private int totalCost = 0;
-	private int totalPaid = 0;
 	private Product items[] = new Product[5];
 	private int itemsAmount = 0;
 	
